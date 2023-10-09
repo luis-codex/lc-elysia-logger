@@ -2,10 +2,7 @@
   "name": "@lc/Elysialogger",
   "version": "0.0.1",
   "module": "src/index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
+  "type": "module",
   "dependencies": {
     "elysia": "latest",
     "picocolors": "^1.0.0"
@@ -13,5 +10,25 @@
   "devDependencies": {
     "bun-types": "latest"
   },
-  "description": "fficient Logging Middleware Designed for Bun's Elysia Web Framework"
+  "description": "fficient Logging Middleware Designed for Bun's Elysia Web Framework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luis-tenorio-code/lc-Elysialogger.git"
+  },
+  "keywords": [
+    "logging",
+    "elysia",
+    "middleware",
+    "bun",
+    "web",
+    "logger",
+    "elysiajs",
+    "bunjs"
+  ],
+  "author": "Luis Tenorio code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luis-tenorio-code/lc-Elysialogger/issues"
+  },
+  "homepage": "https://github/luis-tenorio-code/lc-Elysialogger#readme"
 }
