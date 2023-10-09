@@ -1,10 +1,11 @@
+#!/usr/bin/env bun
 import Elysia from 'elysia';
 import process from 'process';
 import pc from 'picocolors';
 
 export const lcLogger = () => {
   return new Elysia({
-    name: '@lc/Elysialogger',
+    name: 'lc-Elysia-logger',
   })
     .onBeforeHandle((ctx) => {
       ctx.store = { beforeTime: process.hrtime(), ...ctx.store };
