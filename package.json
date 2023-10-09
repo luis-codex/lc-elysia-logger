@@ -1,6 +1,6 @@
 {
   "name": "lc-elysia-logger",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "module": "src/index.ts",
   "type": "module",
   "dependencies": {
@@ -16,7 +16,7 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "description": "fficient Logging Middleware Designed for Bun's Elysia Web Framework",
+  "description": "Efficient Logging Middleware Designed for Elysia Web Framework",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luis-tenorio-code/lc-elysia-logger.git"
