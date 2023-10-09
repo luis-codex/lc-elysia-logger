@@ -14,7 +14,7 @@ import { Elysia } from 'elysia';
 
 const app = new Elysia()
   .use(lcLogger())
-  .group('@lc/Elysialogger', (api) =>
+  .group('lc-elysia-logger', (api) =>
     api
       .get('/', () => ({ message: 'API' }))
       .post('/', () => ({ message: 'API' }))
