@@ -9,7 +9,25 @@ bun add lc-Elysia-logger
 ## Usage
 
 ```js
-import { logger } from 'lc-Elysia-logger';
+import { lcLogger } from 'lc-elysia-logger';
+import { Elysia } from 'elysia';
+
+const app = new Elysia()
+  .use(lcLogger())
+  .group('@lc/Elysialogger', (api) =>
+    api
+      .get('/', () => ({ message: 'API' }))
+      .post('/', () => ({ message: 'API' }))
+      .put('/', () => ({ message: 'API' }))
+      .delete('/', () => ({ message: 'API' }))
+      .patch('/', () => ({ message: 'API' }))
+      .options('/', () => ({ message: 'API' }))
+      .head('/', () => ({ message: 'API' }))
+  )  
+  .listen(3000);
+
+console.log(` - API is running at ${app.server?.hostname}:${app.server?.port}`);
+
 ```
 
 ## Result

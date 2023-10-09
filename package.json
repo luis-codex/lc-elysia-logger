@@ -1,11 +1,14 @@
 {
-  "name": "lc-Elysia-logger",
+  "name": "lc-elysia-logger",
   "version": "0.0.1",
   "module": "src/index.ts",
   "type": "module",
   "dependencies": {
     "elysia": "latest",
     "picocolors": "1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "bun-types": "latest"
@@ -30,5 +33,5 @@
   "bugs": {
     "url": "https://github.com/luis-tenorio-code/lc-Elysia-logger/issues"
   },
-  "homepage": "https://github/luis-tenorio-code/lc-Elysia-logger#readme"
+  "homepage": "https://github.com/luis-tenorio-code/lc-Elysia-logger#readme"
 }
