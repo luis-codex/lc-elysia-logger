@@ -1,15 +1,14 @@
-# Elysia with Bun runtime
+# @lc/Elysialogger
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+## Installation
 ```bash
-bun create elysia ./elysia-example
+bun add @lc/Elysialogger
 ```
 
-## Development
-To start the development server run:
-```bash
-bun run dev
+## Usage
+```js
+import { logger } from '@lc/Elysialogger'
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+## Result
+![Result logger](https://github.com/luis-tenorio-code/lc-Elysialogger/result.png)
