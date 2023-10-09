@@ -1,9 +1,9 @@
-# lc-Elysia-logger
+# lc-elysia-logger
 
 ## Installation
 
 ```bash
-bun add lc-Elysia-logger
+bun add lc-elysia-logger
 ```
 
 ## Usage
@@ -32,4 +32,4 @@ console.log(` - API is running at ${app.server?.hostname}:${app.server?.port}`);
 
 ## Result
 
-![Result logger](https://github.com/luis-tenorio-code/lc-Elysia-logger/blob/master/result.png?raw=true)
+![Result logger](https://github.com/luis-tenorio-code/lc-elysia-logger/blob/master/result.png?raw=true)

@@ -5,7 +5,7 @@ import pc from 'picocolors';
 
 export const lcLogger = () => {
   return new Elysia({
-    name: 'lc-Elysia-logger',
+    name: 'lc-elysia-logger',
   })
     .onBeforeHandle((ctx) => {
       ctx.store = { beforeTime: process.hrtime(), ...ctx.store };
