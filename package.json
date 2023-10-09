@@ -1,0 +1,17 @@
+{
+  "name": "@lc/Elysialogger",
+  "version": "0.0.1",
+  "module": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "elysia": "latest",
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "description": "fficient Logging Middleware Designed for Bun's Elysia Web Framework"
+}
