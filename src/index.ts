@@ -1,8 +1,26 @@
-#!/usr/bin/env bun
-import Elysia from 'elysia';
+import { Elysia } from 'elysia';
 import process from 'process';
 import pc from 'picocolors';
 
+/**
+ * ---
+ * @example
+ * ```typescript
+ * import { Elysia } from 'elysia';
+ * import { lcLogger } from 'lc-elysia-logger';
+ *
+ * const app = new Elysia()
+ *  .use(lcLogger())
+ * .get('/', () => 'Hello Elysia')
+ * .listen(3000);
+ *
+ * console.log(
+ *  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
+ * );
+ * ```
+ * @description
+ * lc-elysia-logger es un middleware para Elysia que permite mostrar en la consola de comandos las peticiones que se realizan al servidor.
+ */
 export const lcLogger = () => {
   return new Elysia({
     name: 'lc-elysia-logger',
@@ -41,6 +59,12 @@ export const lcLogger = () => {
       console.log(logStr.join(' '));
     });
 };
+
+/**
+ * Formatea la duración de una solicitud en una cadena legible.
+ * @param {number[]} beforeTime - Tiempo antes de manejar la solicitud.
+ * @returns {string} Cadena de texto formateada que representa la duración.
+ */
 function formatDuration(beforeTime: [number, number]): string {
   const [seconds, nanoseconds] = process.hrtime(beforeTime);
   const durationInMicroseconds = (seconds * 1e9 + nanoseconds) / 1e3;
@@ -59,6 +83,12 @@ function formatDuration(beforeTime: [number, number]): string {
   return '';
 }
 
+/**
+ * Formatea el método de solicitud HTTP para mostrarlo con colores.
+ * @param {string} method - Método de solicitud HTTP.
+ * @param {string} check - Marca para indicar éxito o error.
+ * @returns {string} Cadena de texto formateada con colores.
+ */
 function formatRequestMethod(method: string, check: string): string {
   switch (method) {
     case 'GET':
