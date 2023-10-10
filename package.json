@@ -1,21 +1,16 @@
 {
   "name": "lc-elysia-logger",
-  "version": "0.0.8",
   "module": "src/index.ts",
   "type": "module",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
   "dependencies": {
     "elysia": "latest",
     "picocolors": "1.0.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
+  "version": "0.0.9",
   "description": "Efficient Logging Middleware Designed for Elysia Web Framework",
   "repository": {
     "type": "git",
