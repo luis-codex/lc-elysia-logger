@@ -10,7 +10,10 @@
     "elysia": "latest",
     "picocolors": "1.0.0"
   },
-  "version": "0.1.0",
+  "scripts": {
+    "test": "bun test"
+  },
+  "version": "0.1.2",
   "description": "Efficient Logging Middleware Designed for Elysia Web Framework",
   "repository": {
     "type": "git",
