@@ -32,4 +32,4 @@ console.log(` - API is running at ${app.server?.hostname}:${app.server?.port}`);
 
 ## Result
 
-![Result logger](https://github.com/luis-tenorio-code/lc-elysia-logger/blob/master/result.png?raw=true)
+![Result logger](https://github.com/luis-tenorio-code/lc-elysia-logger/blob/master/example.png?raw=true)
